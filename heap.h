@@ -5,7 +5,7 @@
 class Heap
 {
 public:
-    Heap(bool maxHeap = true);
+    Heap();
     int getRoot();
     int removeRoot();
     void insert(int x);
@@ -17,6 +17,16 @@ private:
     int n;
     int *array;
     bool maxHeap;
+protected:
+    virtual bool compare(int a, int b) = 0;
+};
+
+
+class MinHeap : public Heap{
+    bool compare(int a, int b);
+};
+
+class MaxHeap : public Heap{
     bool compare(int a, int b);
 };
 

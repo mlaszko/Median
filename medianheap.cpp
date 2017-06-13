@@ -5,8 +5,8 @@ using namespace std;
 
 MedianHeap::MedianHeap()
 {
-    maxHeap = new Heap(true);
-    minHeap = new Heap(false);
+    maxHeap = new MaxHeap();
+    minHeap = new MinHeap();
 }
 
 void MedianHeap::print()

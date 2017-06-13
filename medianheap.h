@@ -12,8 +12,8 @@ public:
     float insert(int x);
 
 private:
-    Heap *maxHeap;
-    Heap *minHeap;
+    MaxHeap *maxHeap;
+    MinHeap *minHeap;
 };
 
 #endif // MEDIANHEAP_H

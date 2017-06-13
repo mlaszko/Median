@@ -3,12 +3,11 @@
 #include <string.h>
 using namespace std;
 
-Heap::Heap(bool maxHeap)
+Heap::Heap()
 {
     array = 0;
     arraySize = 100000;
     n = 0;
-    this->maxHeap = maxHeap;
 }
 
 int Heap::getRoot()
@@ -84,10 +83,12 @@ void Heap::print()
     cout << endl;
 }
 
-bool Heap::compare(int a, int b)
+bool MinHeap::compare(int a, int b)
 {
-    if(maxHeap)
-        return a < b;
-    else
-        return a > b;
+    return a > b;
+}
+
+bool MaxHeap::compare(int a, int b)
+{
+    return a < b;
 }
