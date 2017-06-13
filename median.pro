@@ -4,7 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    heap.cpp \
     medianheap.cpp \
     medianinsertsort.cpp
 
